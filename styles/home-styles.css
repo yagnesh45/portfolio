@@ -270,7 +270,7 @@ html, body{
   .sidenav a {font-size: 18px;}
 
   .div-right{
-    background-image: url('me_2.jpg');
+    background-image: url('../images/me_2.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
