@@ -1,0 +1,318 @@
+@keyframes slideInFromTop{
+  0%{
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0%;);
+  }
+}
+
+@keyframes slideInFromBottom{
+  0%{
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+
+html, body{
+  color: white;
+  font-family: 'Montserrat', calibri;
+  background-color: black;
+  overflow: hidden;
+}
+
+
+.div-left{
+  background-color: black;
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.div-right{
+  background-image: url('../images/me_1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+  animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+.work-name{
+  font-size: 30px;
+}
+
+.my-name{
+  font-size: 500%;
+  font-weight: 600;
+  margin-bottom: 45px;
+}
+
+.about-me-brief{
+  display: block;
+  width: 40%;
+  text-align: justify;
+}
+
+.more-about-me-div{
+  display: inline-block;
+  text-decoration: none;
+}
+
+.anchor-about{
+  text-decoration: none!important;
+}
+
+.arrow-wrap{
+  width: 10%;
+  height: 20px;
+  display: inline;
+}
+
+.arrow-icon{
+  vertical-align: middle;
+}
+
+.about-btn-text{
+  width: 30%;
+  font-size: 20px;
+  padding-right: 20px;
+  clear: left;
+  color: white;
+  transition: 0.3s;
+  vertical-align: middle;
+}
+
+.about-btn-text:hover{
+  letter-spacing: 0.7;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.menu-button {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  z-index: 1;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 1px;
+  background-color: white;
+  margin: 9px 0;
+  transition: 0.4s;
+}
+
+.name-container{
+  top: 25%;
+  left: 13%;
+  z-index: 2;
+  position: absolute;
+  justify-content: center;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.home-div{
+  left: 25px;
+  top: 20px;
+  position: absolute;
+  z-index: 2;
+}
+
+	.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  right: 0;
+  z-index: 2;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 35px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn:hover{
+  color: #f1f1f1;
+  font-size: 60px;
+  color: black;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color: white;
+  transition: 0.3s;
+  color: black;
+  font-size: 30px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 60px;
+  padding-left: 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 479px) {  /*479px*/
+  .sidenav {
+    padding-top: 15px;
+    z-index: 4;
+  }
+
+  .home-div{
+    top: 5px;
+    left: 25px;
+  }
+
+  .menu-button {
+    top: 5px;
+    right: 25px;
+  }
+
+  .sidenav a {font-size: 18px;}
+
+  .div-right{
+    background-image: url('../images/me_2.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    width: 100%;
+    height: 150%;
+    opacity: 0.4;
+  }
+
+  .name-container{
+      top: 30%;
+      margin: 0 0 25 30px;
+      left: 0%;
+      z-index: 2;
+      position: absolute;
+  }
+
+  .work-name{
+    font-size: 150%;
+  }
+
+  .my-name{
+    font-size: 320%;
+    font-weight: 600;
+    width: 80%;
+    margin: 0 0 16px;
+  }
+
+  .about-me-brief{
+    display: block;
+    width: 85%;
+    font-size: 70%;
+    text-align: justify;
+  }
+
+  .menu-bar-div{
+    background-color: black;
+    height: 72px;
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .sidenav {
+    padding-top: 15px;
+    z-index: 4;
+  }
+
+  .menu-button {
+    top: 5px;
+    right: 25px;
+  }
+
+  .home-div{
+    top: 5px;
+    left: 20px;
+  }
+
+  .sidenav a {font-size: 18px;}
+
+  .div-right{
+    background-image: url('me_2.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    width: 100%;
+    height: 150%;
+    opacity: 0.4;
+  }
+
+  .name-container{
+      top: 25%;
+      margin: 0 0 15px 30px;
+      left: 0%;
+      z-index: 2;
+      width: 70%;
+      position: absolute;
+  }
+
+  .work-name{
+    font-size: 150%;
+  }
+
+  .my-name{
+    font-size: 320%;
+    font-weight: 600;
+    width: 80%;
+  }
+
+  .about-me-brief{
+    display: block;
+    width: 60%;
+    font-size: 70%;
+    text-align: justify-all;
+  }
+
+  .menu-bar-div{
+    background-color: black;
+    height: 52px;
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
