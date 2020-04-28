@@ -185,6 +185,21 @@ html, body{
   padding-left: 10px;
 }
 
+.follow-me-div{
+  right: 100px;
+  bottom: 100px;
+  position: absolute;
+}
+
+.social-media-div{
+  display: inline-block;
+}
+
+.img-link:hover{
+  background-color: transparent;
+  display: inline-block;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 479px) {  /*479px*/
   .sidenav {
