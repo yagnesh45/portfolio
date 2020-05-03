@@ -148,11 +148,11 @@ html, body{
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   right: 0;
-  z-index: 2;
+  z-index: 4;
 }
 
 /* The navigation menu links */
-.sidenav a {
+.menu-anchor {
   padding: 8px 8px 8px 35px;
   text-decoration: none;
   font-size: 25px;
@@ -168,7 +168,7 @@ html, body{
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.menu-anchor:hover {
   color: #f1f1f1;
   background-color: white;
   transition: 0.3s;
@@ -186,7 +186,7 @@ html, body{
 }
 
 .follow-me-div{
-  right: 100px;
+  right: 50px;
   bottom: 100px;
   position: absolute;
 }
@@ -197,7 +197,7 @@ html, body{
 
 .img-link{
   float: left;
-  padding: 0 0 0 0px;
+  padding: 0 0 10px 10px;
 }
 
 .img-link:hover{
