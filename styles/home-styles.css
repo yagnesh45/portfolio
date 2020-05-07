@@ -25,7 +25,6 @@ html, body{
   overflow: hidden;
 }
 
-
 .div-left{
   background-color: black;
   width: 50%;
@@ -75,16 +74,6 @@ html, body{
   text-decoration: none;
 }
 
-.anchor-about{
-  text-decoration: none!important;
-}
-
-.arrow-wrap{
-  width: 10%;
-  height: 20px;
-  display: inline;
-}
-
 .arrow-icon{
   vertical-align: middle;
 }
@@ -116,7 +105,7 @@ html, body{
 
 .bar1, .bar2, .bar3 {
   width: 35px;
-  height: 1px;
+  height: 2px;
   background-color: white;
   margin: 9px 0;
   transition: 0.4s;
@@ -139,14 +128,14 @@ html, body{
 }
 
 	.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  top: 0; /* Stay at the top */
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 80px;
+  transition: 0.5s;
   right: 0;
   z-index: 4;
 }
@@ -167,7 +156,6 @@ html, body{
   color: black;
 }
 
-/* When you mouse over the navigation links, change their color */
 .menu-anchor:hover {
   color: #f1f1f1;
   background-color: white;
@@ -176,7 +164,6 @@ html, body{
   font-size: 30px;
 }
 
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -186,7 +173,7 @@ html, body{
 }
 
 .follow-me-div{
-  right: 50px;
+  right: 45px;
   bottom: 100px;
   position: absolute;
 }
@@ -205,10 +192,9 @@ html, body{
   display: inline-block;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 479px) {  /*479px*/
   .sidenav {
-    padding-top: 15px;
+    padding-top: 50px;
     z-index: 4;
   }
 
@@ -222,25 +208,21 @@ html, body{
     right: 25px;
   }
 
-  .sidenav a {font-size: 18px;}
+  .sidenav a {
+    font-size: 18px;
+  }
 
   .div-right{
     background-image: url('../images/me_2.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
     width: 100%;
-    height: 150%;
+    height: 100%;
     opacity: 0.4;
   }
 
   .name-container{
-      top: 30%;
-      margin: 0 0 25 30px;
-      left: 0%;
-      z-index: 2;
-      position: absolute;
+    top: 30%;
+    margin: 0 0 25 30px;
+    left: 0%;
   }
 
   .work-name{
@@ -249,16 +231,13 @@ html, body{
 
   .my-name{
     font-size: 320%;
-    font-weight: 600;
     width: 80%;
     margin: 0 0 16px;
   }
 
   .about-me-brief{
-    display: block;
     width: 85%;
     font-size: 70%;
-    text-align: justify;
   }
 
   .menu-bar-div{
@@ -270,9 +249,10 @@ html, body{
     top: 0;
   }
 }
+
 @media screen and (max-width: 991px) {
   .sidenav {
-    padding-top: 15px;
+    padding-top: 60px;
     z-index: 4;
   }
 
@@ -286,26 +266,22 @@ html, body{
     left: 20px;
   }
 
-  .sidenav a {font-size: 18px;}
+  .sidenav a {
+    font-size: 18px;
+  }
 
   .div-right{
     background-image: url('../images/me_2.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
     width: 100%;
-    height: 150%;
+    height: 100%;
     opacity: 0.4;
   }
 
   .name-container{
-      top: 25%;
-      margin: 0 0 15px 30px;
-      left: 0%;
-      z-index: 2;
-      width: 70%;
-      position: absolute;
+    top: 25%;
+    margin: 0 0 15px 30px;
+    left: 0%;
+    width: 70%;
   }
 
   .work-name{
@@ -314,15 +290,12 @@ html, body{
 
   .my-name{
     font-size: 320%;
-    font-weight: 600;
     width: 80%;
   }
 
   .about-me-brief{
-    display: block;
     width: 60%;
     font-size: 70%;
-    text-align: justify-all;
   }
 
   .menu-bar-div{
