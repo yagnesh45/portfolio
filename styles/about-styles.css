@@ -1,0 +1,24 @@
+html,body{
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+html,body{
+    background-image: url('../images/about-bg.jpg');
+}
+
+html{
+}
+
+html.scrolled{
+    background-color: black;
+}
+
+.about-me-title-div{
+    justify-content: center;
+    text-align: center;
+    line-height: 200px;
+    font-size: 50px;
+    animation: 1s cubic-bezier(0.755, 0.05, 0.855, 0.06) 0s 1 slideInFromTop;
+}
