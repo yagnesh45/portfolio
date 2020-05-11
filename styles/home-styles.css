@@ -23,6 +23,7 @@ html, body{
   font-family: 'Montserrat', calibri;
   background-color: black;
   overflow: hidden;
+  transition-delay: 3s;
 }
 
 .div-left{
