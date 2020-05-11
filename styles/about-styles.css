@@ -8,9 +8,6 @@ html,body{
     background-image: url('../images/about-bg.jpg');
 }
 
-html{
-}
-
 html.scrolled{
     background-color: black;
 }
