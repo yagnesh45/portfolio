@@ -1,21 +1,44 @@
-html,body{
+html{
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
-}
-
-html,body{
+    background-attachment: scroll;
+    background-repeat: no-repeat;
     background-image: url('../images/about-bg.jpg');
 }
 
-html.scrolled{
-    background-color: black;
+body{
+    background: transparent;
+    scrollbar-color: black;
 }
 
 .about-me-title-div{
     justify-content: center;
     text-align: center;
-    line-height: 200px;
+    padding-top: 50px;
+    line-height: 100px;
     font-size: 50px;
-    animation: 1s cubic-bezier(0.755, 0.05, 0.855, 0.06) 0s 1 slideInFromTop;
+    animation: 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 0s 1 slideInFromTop;
+}
+
+.resume-link-div{
+    margin-top: 50px;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+}
+
+.resume-link{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.about-me-content{
+    background-color: black;
+    height: 100%;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
 }
