@@ -13,7 +13,6 @@ html::-webkit-scrollbar{
 
 body{
     background: transparent;
-    scrollbar-color: black;
 }
 
 .about-me-title-div{
@@ -25,22 +24,41 @@ body{
     animation: 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 0s 1 slideInFromTop;
 }
 
+.profile-photo-div{
+    border-radius: 50%;
+    /* background-image: linear-gradient(red,yellow); */
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    margin-top: -150px;
+    right: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+}
+
+.profile-photo-div>img{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
 .resume-link{
     color: black;
     text-decoration: none;
     background-color: white;
     padding: 20px;
     border-radius: 25px;
-    z-index: 5;
-    position: fixed;
-    top: 15px;
-    right: 100px;
+    position: absolute;
+    right: 110px;
+    margin-top: -20px;
     font-weight: 700;
 }
 
 .about-me-content{
     background-image: linear-gradient( 65.5deg,  rgba(23,205,205,1) -15.1%, rgba(23,25,95,1) 71.5% );
-    height: max-content;
+    height: 250%;
     padding: 50px;
     margin: 50px;
     border-radius: 20px;
@@ -61,11 +79,26 @@ body{
     border: 1px solid white;
 }
 
+.skills-technologies-div{
+    display: inline;
+}
+
+.programming-languages-div,.develpment-div,.database-div, .version-control-div{
+    float: left;
+    position: relative;
+    width: 40%;
+    border: 1px white solid;
+    margin: 20px;
+    padding: 10px;
+    font-size: medium;
+    padding-left: 30px;
+}
+
 .progress-outer{
     border-radius: 5px;
     height: 30px;
     background-color: #bbb;
-    width: 50%;
+    width: 80%;
     margin-bottom: 20px;
 }
 
