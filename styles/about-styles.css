@@ -3,6 +3,16 @@
     100%{ opacity: 1; }
 }
 
+@keyframes slideInFromTop{
+    0%{
+      transform: translateY(20%);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0%);
+    }
+  }
+
 html{
     scrollbar-width: none;
 }
@@ -15,18 +25,141 @@ body{
     background: transparent;
 }
 
+html, body{
+  color: white;
+  font-family: 'Montserrat', calibri;
+  background-color: black;
+}
+
+.menu-button {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 1;
+ }
+  
+ .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 9px 0;
+    transition: 0.4s;
+ }
+
+ .home-div{
+    left: 25px;
+    top: 20px;
+    position: absolute;
+    z-index: 2;
+ }
+
+ .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 80px;
+    transition: 0.5s;
+    right: 0;
+    z-index: 4;
+ }
+
+ .menu-anchor {
+    padding: 8px 8px 8px 35px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn:hover{
+    color: #f1f1f1;
+    font-size: 60px;
+    color: black;
+}
+
+.menu-anchor:hover {
+    color: #f1f1f1;
+    background-color: white;
+    transition: 0.3s;
+    color: black;
+    font-size: 30px;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    padding-left: 10px;
+}
+  
+.follow-me-div{
+    right: 45px;
+    bottom: 100px;
+    position: absolute;
+}
+  
+.social-media-div{
+    display: inline;
+}
+  
+.img-link{
+    float: left;
+    padding: 0 0 10px 10px;
+}
+  
+.img-link:hover{
+    background-color: transparent;
+    display: inline-block;
+}
+
+@media screen and (max-height: 479px) {  /*479px*/
+    .sidenav {
+      padding-top: 50px;
+      z-index: 4;
+    }
+  
+    .home-div{
+      top: 5px;
+      left: 25px;
+    }
+  
+    .menu-button {
+      top: 5px;
+      right: 25px;
+    }
+  
+    .sidenav a {
+      font-size: 18px;
+    }
+
+    .menu-bar-div{
+        background-color: black;
+        height: 72px;
+        z-index: 3;
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+}
+
 .about-me-title-div{
     justify-content: center;
     text-align: center;
     padding-top: 50px;
     line-height: 100px;
-    font-size: 50px;
+    font-size: 200%;
     animation: 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 0s 1 slideInFromTop;
 }
 
 .profile-photo-div{
     border-radius: 50%;
-    /* background-image: linear-gradient(red,yellow); */
     height: 150px;
     width: 150px;
     position: absolute;
@@ -43,13 +176,14 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+
 }
 .resume-link{
     color: black;
     text-decoration: none;
     background-color: white;
     padding: 20px;
-    border-radius: 25px;
+    border-radius: 15px;
     position: absolute;
     right: 110px;
     margin-top: -20px;
@@ -63,7 +197,7 @@ body{
     margin: 50px;
     border-radius: 20px;
     font-size: x-large;
-    animation: 2s ease 0s 1 appear;
+    animation: 1s ease 0s 1 appear;
 }
 
 .hobbies-div{
@@ -80,7 +214,7 @@ body{
 }
 
 .skills-technologies-div{
-    display: inline;
+    display: inline-block;
 }
 
 .programming-languages-div,.develpment-div,.database-div, .version-control-div{
@@ -108,4 +242,77 @@ body{
     vertical-align: center;
     border: 2px solid #bbb;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 991px) {
+    .sidenav {
+      padding-top: 60px;
+      z-index: 4;
+    }
+  
+    .menu-button {
+      top: 5px;
+      right: 25px;
+    }
+  
+    .home-div{
+      top: 5px;
+      left: 20px;
+    }
+  
+    .sidenav a {
+      font-size: 18px;
+    }
+
+    .menu-bar-div{
+        background-color: black;
+        height: 52px;
+        z-index: 3;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .profile-photo-div{
+        height: 70px;
+        width: 70px;
+        margin-top: -80px;
+        right: 70px;
+    }
+
+    .about-me-content{
+        font-size: 70%;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .resume-link{
+        padding: 10px;
+        margin-top: -10px;
+        right: 77px;
+    }
+
+    .profile-photo-div>img{
+        height: 70px;
+        width: 75px;
+    }
+
+    .hobby{
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .programming-languages-div,.develpment-div,.database-div, .version-control-div{
+        width: 80%;
+        padding: 10px;
+    }
+
+    .progress-outer{
+        height: 20px;
+    }
+
+    .progress-inner{
+        height: 15px;
+    }
 }

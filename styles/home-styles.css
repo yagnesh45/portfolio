@@ -126,7 +126,7 @@ html, body{
   z-index: 2;
 }
 
-	.sidenav {
+.sidenav {
   height: 100%;
   width: 0;
   position: fixed;
@@ -139,7 +139,6 @@ html, body{
   z-index: 4;
 }
 
-/* The navigation menu links */
 .menu-anchor {
   padding: 8px 8px 8px 35px;
   text-decoration: none;
