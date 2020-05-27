@@ -2,12 +2,11 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="styles/home-styles.css" /> -->
     <link rel="stylesheet" type="text/css" href="styles/about-styles.css" />
     
 	  <script type="text/javascript">
       function openNav() {document.getElementById("mySidenav").style.width = "250px";}
-      function closeNav() {document.getElementById("mySidenav").style.width = "0";}
+      function closeNav() {document.getElementById("mySidenav").style.width = "0"; document.getElementById("follow-me-div").style.display = none; }
     </script>
   </head>
   <body>
@@ -43,15 +42,11 @@
       </div>
     </div>
     <div class="about-me-content">
-      <div class="profile-resume-div">
         <div class="profile-photo-container">
       <div class="profile-photo-div">
         <img src="images/profile-photo.jpg"/>
       </div></div>
-      <div class="resume-link-div">
-        <a target="_blank_" class="resume-link" href="https://drive.google.com/file/d/1FA8deAUn-KaINxJOYrHVSF47DIej8afI/view?usp=sharing">Resume</a>
-      </div>
-      </div>
+      
       <div style="display: block;">
       <p style="text-align: justify; padding-top: 30px;">Hey there! My name is yagnesh patil. I am 3<sup>rd</sup> year student of G H Patel college of engineering and technology.
       Currently pursuing my bachelor of engineering degree in Information Technology. <br>
@@ -148,6 +143,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="resume-link-div">
+        <a target="_blank_" class="resume-link" href="https://drive.google.com/file/d/1FA8deAUn-KaINxJOYrHVSF47DIej8afI/view?usp=sharing">Resume</a>
       </div>
     </div>
     <script src="js/show-on-scroll.js"></script>
