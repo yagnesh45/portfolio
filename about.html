@@ -1,6 +1,13 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" >
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/about-styles.css" />
     
@@ -10,6 +17,7 @@
     </script>
   </head>
   <body>
+    <div class="cursor" ></div>
     <div class="menu-bar-div">
       <div class="home-div">
         <a href="index.html" name="home"><img src="images/home_btn1.png" height="40px" width="40px" /></a>
@@ -29,7 +37,7 @@
           <h4>Follow me</h4>
           <div class="social-media-div">
             <a class="img-link" href="https://www.instagram.com/yagnesh_patil/" target="_blank_"><img src="images/instagram.png" height="30px" width="30px" alt="ig" /></a>
-            <a class="img-link" href="https://www.linkedin.com/in/yagnesh-p-886986119" target="_blank_"><img src="images/linkedin.png"height="30px"width="30px" alt="in"/></a>
+            <a class="img-link" href="https://www.linkedin.com/in/yagnesh45" target="_blank_"><img src="images/linkedin.png"height="30px"width="30px" alt="in"/></a>
             <a class="img-link" href="https://www.facebook.com/yagnesh.patil.2311" target="_blank_"><img src="images/facebook.png" height="30px" width="30px" alt="fb" /></a>
             <a class="img-link" href="https://www.github.com/yagnesh45" target="_blank_"><img src="images/github.png" height="30px" width="30px" alt="git" /></a>
           </div>
@@ -149,5 +157,12 @@
       </div>
     </div>
     <script src="js/show-on-scroll.js"></script>
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', e => {
+          cursor.setAttribute('style','top:' + e.pageY + 'px; left:' + e.pageX+'px')
+        })
+
+    </script>
   </body>
 </html>
