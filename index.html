@@ -9,6 +9,7 @@
     </script>
   </head>
   <body>
+    <div class="cursor"></div>
     <div class="menu-bar-div">
       <div class="home-div">
         <a href="#home" name="home"><img src="images/home_btn1.png" height="40px" width="40px" /></a>
@@ -51,6 +52,12 @@
       </a>
       </div>
     </div>
+    <script>
+      const cursor = document.querySelector('.cursor');
+      document.addEventListener('mousemove', e => {
+        cursor.setAttribute('style', 'display:block; top:' + e.pageY + 'px; left:' + e.pageX+'px')
+      })
+    </script>
   </body>
   <!-- Icons Credits -->
   Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>

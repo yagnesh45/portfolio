@@ -21,7 +21,20 @@
 html, body{
   color: white;
   font-family: 'Montserrat', calibri;
-  background-color: black;
+  background-color: #121212;
+  cursor: none;
+  overflow: hidden;
+}
+
+.cursor{
+  width: 25px;
+  height: 25px;
+  border: 4px solid orange;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 6;
+  display: none;
 }
 
 .div-left{
@@ -95,7 +108,7 @@ html, body{
 
 .menu-button {
   display: inline-block;
-  cursor: pointer;
+  cursor: none;
   position: absolute;
   top: 20px;
   right: 25px;
@@ -167,6 +180,7 @@ html, body{
   top: 0;
   right: 25px;
   font-size: 60px;
+  cursor: none;
   padding-left: 10px;
 }
 
