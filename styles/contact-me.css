@@ -3,7 +3,7 @@
 }
 
 .contact-form-div{
-    background-color: #191919;
+    background-color: #1c1c1c;
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
     margin-bottom: 50px;
@@ -15,7 +15,6 @@
     padding: 15px 15px 15px 5px;
     margin: 10px auto;
     width: 100%;
-    background-color: #191919;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid grey;
