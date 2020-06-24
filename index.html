@@ -3,6 +3,7 @@
   <head>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/home-styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" >
     <script type="text/javascript">
       function openNav() {document.getElementById("mySidenav").style.width = "250px";}
       function closeNav() {document.getElementById("mySidenav").style.width = "0";}
@@ -24,7 +25,7 @@
         <a href="about.html" class="menu-anchor">About</a>
         <a href="#" class="menu-anchor">Education</a>
         <a href="#" class="menu-anchor">Projects</a>
-        <a href="#" class="menu-anchor">Contact Me</a>
+        <a href="contact-me.html" class="menu-anchor">Contact Me</a>
       <div class="follow-me-div">
         <h4>Follow me</h4>
         <div class="social-media-div">
@@ -54,9 +55,14 @@
     </div>
     <script>
       const cursor = document.querySelector('.cursor');
-      document.addEventListener('mousemove', e => {
-        cursor.setAttribute('style', 'display:block; top:' + e.pageY + 'px; left:' + e.pageX+'px')
-      })
+      if (window.innerWidth <= 1024) {
+        document.getElementsByTagName('BODY')[0].style.cursor = 'default';
+        cursor.setAttribute('style','display:none');
+      }else{
+        document.addEventListener('mousemove', e => {
+          cursor.setAttribute('style', 'display:block; top:' + e.pageY + 'px; left:' + e.pageX+'px');
+        })
+      }
     </script>
   </body>
   <!-- Icons Credits -->
