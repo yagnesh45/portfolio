@@ -32,16 +32,12 @@
     color: white;
     padding: 5px;
     text-decoration: none;
-    /* background-color: #46b5d167; */
-    border-radius: 50%;
     transition-duration: 0.3s;
 }
 
 .thankyou_message a:hover{
     text-decoration: none;
     background-color: white;
-    color: black;
-    transition-duration: 0.3s;
 }
 
 .contact-form-input{
