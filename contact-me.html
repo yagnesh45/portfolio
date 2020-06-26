@@ -18,7 +18,7 @@
       function openNav() {document.getElementById("mySidenav").style.width = "250px";}
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0px"; 
-        }
+    }
     </script>
   </head>
   <body>
@@ -66,21 +66,31 @@
           </div>
         </div>
         <div class="contact-form-div col-lg-6 col-md-6 col-sm-12">
-          <form action="mailto:yagnesh.s.patil@gmail.com" method="POST" enctype="text/plain">
+          
+          <form action="https://script.google.com/macros/s/AKfycbwDwZaeMQh1PJ3xe0AjV9IV46GW4zOui5134KV4CJiQt3V8LT6R/exec" 
+          class="gform form-elements" data-email="yagneshpatil43@gmail.com" method="POST" id="contact-form">
+            <div class="thankyou_message panel panel-default" style="display: none;">
+              <a href="#" class="close" data-dismiss="panel" aria-label="close" id="hide">&times;</a><br>
+              <p>
+                Thank you sending me a mail, I will be in touch with you within 2-3 days
+              </p>
+            </div>
             <br><label class="contact-form-label">Name</label><br>
-            <input type="text" name="Name" class="contact-form-input" placeholder="name" /><br><br>
+            <input type="text" name="name" class="contact-form-input" placeholder="name" /><br><br>
             <label class="contact-form-label">Phone Number</label><br>
             <input type="text" name="MobileNumber" class="contact-form-input" placeholder="phone number" /><br><br>
             <label class="contact-form-label">Subject</label><br>
-            <input type="text" name="Subject" class="contact-form-input" placeholder="subject"/><br><br>
+            <input type="text" name="subject" class="contact-form-input" placeholder="subject"/><br><br>
             <label class="contact-form-label">Message</label><br>
-            <textarea type="text" rows="4" name="Message" class="contact-form-input" placeholder="Message" ></textarea><br><br>
+            <textarea type="text" rows="4" name="message" class="contact-form-input" placeholder="Message" ></textarea><br><br>
             <input type="submit" class="contact-submit-btn" value="SUBMIT" />
           </form>
         </div>
+        <br>
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 
-    <script src="js/show-on-scroll.js"></script>
     <script>
       const cursor = document.querySelector('.cursor');
       if (window.innerWidth <= 1024) {
@@ -91,6 +101,13 @@
           cursor.setAttribute('style', 'display:block; top:' + e.pageY + 'px; left:' + e.pageX+'px');
         })
       }
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#hide").click(function(){
+          $(".panel").hide();
+        });
+      });
     </script>
 </body>
 </html>

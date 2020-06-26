@@ -15,6 +15,35 @@
     box-shadow: 0 -2px 20px rgba(0, 0, 0, 1);
 }
 
+.thankyou_message{
+    padding: 5px;
+    background-color: #393e46;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    margin: 20px 10px;
+}
+
+.thankyou_message p{
+    margin: 10px 10px 20px 10px;
+}
+
+.thankyou_message a{
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    /* background-color: #46b5d167; */
+    border-radius: 50%;
+    transition-duration: 0.3s;
+}
+
+.thankyou_message a:hover{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    transition-duration: 0.3s;
+}
+
 .contact-form-input{
     padding: 15px 15px 15px 5px;
     margin: 10px auto;
