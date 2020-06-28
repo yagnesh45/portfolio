@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" >
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/header-styles.css" type="text/css">
+    <script type="text/javascript">
+        function openNav() {document.getElementById("mySidenav").style.width = "250px";}
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0px"; 
+      }
+      </script>
+    </head>
+    <body>
+      <div class="cursor" ></div>
+      <div class="menu-bar-div">
+        <div class="home-div">
+          <a href="index.html" name="home"><img src="images/home_btn1.png" height="40px" width="40px" /></a>
+        </div>
+        <div class="menu-button" onclick="openNav()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="menu-anchor closebtn" onclick="closeNav()">&times;</a>
+          <a href="about.html" class="menu-anchor">About</a>
+          <a href="#" class="menu-anchor">Education</a>
+          <a href="#" class="menu-anchor">Projects</a>
+          <a href="contact-me.html" class="menu-anchor">Contact Me</a>
+          <div class="follow-me-div">
+            <h4>Follow me</h4>
+            <div class="social-media-div">
+              <a class="img-link" href="https://www.instagram.com/yagnesh_patil/" target="_blank_"><img src="images/instagram.png" height="30px" width="30px" alt="ig" /></a>
+              <a class="img-link" href="https://www.linkedin.com/in/yagnesh45" target="_blank_"><img src="images/linkedin.png"height="30px"width="30px" alt="in"/></a>
+              <a class="img-link" href="https://www.facebook.com/yagnesh.patil.2311" target="_blank_"><img src="images/facebook.png" height="30px" width="30px" alt="fb" /></a>
+              <a class="img-link" href="https://www.github.com/yagnesh45" target="_blank_"><img src="images/github.png" height="30px" width="30px" alt="git" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        const cursor = document.querySelector('.cursor');
+        if (window.innerWidth <= 1024) {
+          document.getElementsByTagName('BODY')[0].style.cursor = 'default';
+          cursor.setAttribute('style','display:none');
+        }else{
+          document.addEventListener('mousemove', e => {
+            cursor.setAttribute('style', 'display:block; top:' + e.pageY + 'px; left:' + e.pageX+'px');
+          })
+        }
+      </script>
+    </body>
+    </html>

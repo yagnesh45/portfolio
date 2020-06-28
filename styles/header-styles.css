@@ -1,0 +1,155 @@
+html{
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background: transparent;
+    margin: 0;
+    cursor: none;
+}
+
+.cursor{
+    width: 25px;
+    height: 25px;
+    border: 4px solid orange;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 6;
+    display: none;
+}
+
+html, body{
+  color: white;
+  font-family: 'Montserrat', calibri;
+  background-color: #121212;
+}
+
+.menu-button {
+    display: inline-block;
+    cursor: none;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 1;
+ }
+  
+ .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 9px 0;
+    transition: 0.4s;
+ }
+
+ .home-div{
+    left: 25px;
+    top: 20px;
+    position: absolute;
+    z-index: 2;
+ }
+
+ .home-div>a{
+    cursor: none;
+ }
+
+ .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 80px;
+    transition: 0.5s;
+    right: 0;
+    z-index: 4;
+ }
+
+ .menu-anchor {
+    padding: 8px 8px 8px 35px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    cursor: none;
+}
+
+.sidenav .closebtn:hover{
+    color: #f1f1f1;
+    font-size: 60px;
+    color: black;
+}
+
+.menu-anchor:hover {
+    color: #f1f1f1;
+    background-color: white;
+    transition: 0.3s;
+    color: black;
+    font-size: 30px;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    padding-left: 10px;
+    cursor: none;
+}
+  
+.follow-me-div{
+    right: 45px;
+    bottom: 20px;
+    position: absolute;
+}
+  
+.social-media-div{
+    display: inline;
+}
+  
+.img-link{
+    float: left;
+    padding: 0 0 10px 10px;
+}
+  
+.img-link:hover{
+    background-color: transparent;
+    display: inline-block;
+}
+
+@media screen and (max-width: 991px) {
+    .sidenav {
+      padding-top: 60px;
+      z-index: 4;
+    }
+  
+    .menu-button {
+      top: 5px;
+      right: 25px;
+    }
+  
+    .home-div{
+      top: 5px;
+      left: 20px;
+    }
+  
+    .sidenav a {
+      font-size: 18px;
+    }
+
+    .menu-bar-div{
+        background-color: black;
+        height: 52px;
+        z-index: 3;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+}
