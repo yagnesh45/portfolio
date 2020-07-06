@@ -104,7 +104,6 @@ html, body{
   animation: 1s ease-out 0s 1 slideInFromTop;
 }
 
-
 @media screen and (max-height: 479px) {  /*479px*/
   .sidenav {
     padding-top: 50px;
@@ -181,6 +180,10 @@ html, body{
 
   .sidenav a {
     font-size: 18px;
+  }
+
+  .div-left{
+    background-color: unset;
   }
 
   .div-right{
