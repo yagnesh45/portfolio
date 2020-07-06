@@ -13,12 +13,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/header-styles.css" type="text/css">
+    <link rel="stylesheet" href="styles/projects-styles.css" type="text/css">
+    <script src="https://kit.fontawesome.com/2d376856b1.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
         function openNav() {document.getElementById("mySidenav").style.width = "250px";}
         function closeNav() {
           document.getElementById("mySidenav").style.width = "0px"; 
-      }
-      </script>
+        }
+    </script>
+    <title>Projects | portfolio</title>
     </head>
     <body>
       <div class="cursor" ></div>
@@ -48,6 +51,67 @@
           </div>
         </div>
       </div>
+      <main class="page projects-content-div">
+        <section class="portfolio-block projects-cards">
+            <div class="container">
+                <div class="heading projects-title-div">
+                    <h1 style="text-align: center; font-size: 320%;">Projects</h1>
+                </div><br>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 project-div">
+                        <div class="card border-0 shadow rounded py-5" style="text-align: center;"> 
+                            <img class="card-img-top" src="images/logo-img.png" alt="Card Image" width="80%">
+                            <div class="card-body">
+                                <h5 class="card-title project-title">E Health Care</h5>
+                                <p class="card-text" style="text-align: left;">Application that tracks your medicine dosage, provides medicine reminders, and also tracks fitness for you and suggests calorie intake from BMI.</p>
+                                <div class="tech-used-div">
+                                    <div class="tech-p badge">Android</div>
+                                    <div class="tech-p badge">FireBase</div>
+                                    <div class="tech-p badge">MySQL</div>
+                                    <div class="tech-p badge">Java</div>
+                                    <div class="tech-p badge">PHP</div>
+                                </div>
+                                <a href="projects/project-1.html" class="read-more-link">Read More <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-div">
+                        <div class="card border-0 shadow rounded py-5" style="text-align: center;"> 
+                            <img class="card-img-top" src="images/logo-img.png" alt="Card Image" width="80%">
+                            <div class="card-body">
+                                <h5 class="card-title project-title">The Secure Messenger</h5>
+                                <p class="card-text" style="text-align: left;">Android OS based Messaging App that uses AES encryption to provide security to messages.</p>
+                                <div class="tech-used-div">
+                                    <div class="tech-p badge">Android</div>
+                                    <div class="tech-p badge">MySQL</div>
+                                    <div class="tech-p badge">Java</div>
+                                    <div class="tech-p badge">PHP</div>
+                                </div>
+                                <a href="projects/project-1.html" class="read-more-link">Read More <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-div">
+                        <div class="card border-0 shadow rounded py-5" style="text-align: center;"> 
+                            <img class="card-img-top" src="images/logo-img.png" alt="Card Image" width="80%">
+                            <div class="card-body">
+                                <h5 class="card-title project-title">E Health Care</h5>
+                                <p class="card-text" style="text-align: left;">Application that tracks your medicine dosage, provides medicine reminders, and also tracks fitness for you and suggests calorie intake from BMI.</p>
+                                <div class="tech-used-div">
+                                    <div class="tech-p badge">Android</div>
+                                    <div class="tech-p badge">FireBase</div>
+                                    <div class="tech-p badge">MySQL</div>
+                                    <div class="tech-p badge">Java</div>
+                                    <div class="tech-p badge">PHP</div>
+                                </div>
+                                <a href="projects/project-1.html" class="read-more-link">Read More <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
       <script>
         const cursor = document.querySelector('.cursor');
         if (window.innerWidth <= 1024) {
