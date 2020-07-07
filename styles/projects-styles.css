@@ -58,6 +58,8 @@
     display: inline-block;
     margin-bottom: 5px;
     padding: 7px 10px;
+    background-color: grey;
+    border-radius: 25px;
 }
 
 .read-more-link{
