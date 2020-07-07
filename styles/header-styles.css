@@ -82,7 +82,6 @@ html, body{
 
 .sidenav .closebtn:hover{
     color: #f1f1f1;
-    font-size: 60px;
     color: black;
 }
 
@@ -91,7 +90,6 @@ html, body{
     background-color: white;
     transition: 0.3s;
     color: black;
-    font-size: 30px;
 }
   
 .sidenav .closebtn {

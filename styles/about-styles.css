@@ -35,8 +35,7 @@ html, body{
 
 .about-me-title-div{
     text-align: center;
-    padding-top: 50px;
-    line-height: 100px;
+    padding-top: 80px;
     font-size: 200%;
     margin: 0 auto;
     animation: 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 0s 1 slideInFromTop;
@@ -64,7 +63,7 @@ html, body{
 }
 
 .resume-link-div{
-    margin-top: 50px;
+    margin-top: 30px;
     width: 100%;
     text-align: center;
 }
@@ -76,6 +75,11 @@ html, body{
     padding: 20px;
     border-radius: 15px;
     font-weight: 700;
+}
+
+.resume-link:hover{
+    text-decoration: none;
+    color: black;
 }
 
 .about-me-content{
@@ -173,6 +177,11 @@ html, body{
   .images-container::-webkit-scrollbar{
       display: none;
   }
+
+  hr{
+      height: 1px;
+      background-color: white;
+  }
   
   @media screen and (max-width: 800px) {
     .images-column {
@@ -201,7 +210,7 @@ html, body{
     .about-me-content{
         font-size: 70%;
         padding: 20px;
-        margin: 50px 20px 20px 20px;
+        /* margin: 50px 20px 20px 20px; */
     }
 
     .resume-link{
