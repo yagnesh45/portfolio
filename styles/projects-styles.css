@@ -29,9 +29,10 @@
 }
 
 .project-div{
-    padding: 0 30px;
+    padding: 0 20px;
     border: 1px solid grey;
     border-radius: 15px;
+    margin: 20px auto;
 }
 
 .project-div .card{

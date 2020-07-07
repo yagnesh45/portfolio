@@ -194,7 +194,7 @@
 
 .experience-content-div{
     padding: 20px;
-    margin-top: 50px;
+    margin: 50px 20px 20px;
     border-radius: 20px;
     animation: 1s ease 0s 1 slideInFromBottom;
 }
