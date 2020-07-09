@@ -1,0 +1,199 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/header-styles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="../styles/projects-styles.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../styles/project-page-styles.css"
+      type="text/css"
+    />
+    <script type="text/javascript">
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0px";
+      }
+    </script>
+    <title>Projects | portfolio</title>
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="menu-bar-div">
+      <div class="home-div">
+        <a href="index.html" name="home"
+          ><img src="../images/logo-img.png" height="40px" width="40px"
+        /></a>
+      </div>
+      <div class="menu-button" onclick="openNav()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <a
+          href="javascript:void(0)"
+          class="menu-anchor closebtn"
+          onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="about.html" class="menu-anchor">About</a>
+        <a href="experience-education.html" class="menu-anchor"
+          >Education & Experience</a
+        >
+        <a href="#" class="menu-anchor">Projects</a>
+        <a href="contact-me.html" class="menu-anchor">Contact Me</a>
+        <div class="follow-me-div">
+          <h4>Follow me</h4>
+          <div class="social-media-div">
+            <a
+              class="img-link"
+              href="https://www.instagram.com/yagnesh_patil/"
+              target="_blank_"
+              ><img
+                src="../images/instagram.png"
+                height="30px"
+                width="30px"
+                alt="ig"
+            /></a>
+            <a
+              class="img-link"
+              href="https://www.linkedin.com/in/yagnesh45"
+              target="_blank_"
+              ><img
+                src="../images/linkedin.png"
+                height="30px"
+                width="30px"
+                alt="in"
+            /></a>
+            <a
+              class="img-link"
+              href="https://www.facebook.com/yagnesh.patil.2311"
+              target="_blank_"
+              ><img
+                src="../images/facebook.png"
+                height="30px"
+                width="30px"
+                alt="fb"
+            /></a>
+            <a
+              class="img-link"
+              href="https://www.github.com/yagnesh45"
+              target="_blank_"
+              ><img
+                src="../images/github.png"
+                height="30px"
+                width="30px"
+                alt="git"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="page project-page container">
+      <section class="portfolio-block project">
+        <div class="heading">
+          <h1 style="text-align: center;">The Secure Messenger</h1>
+        </div>
+        <br />
+        <div class="project-image">
+          <img src="../images/the secure messenger.jpg" width="100%" />
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 offset-md-1 info">
+            <h3>
+              Description
+            </h3>
+            <p style="text-align: justify;">
+                It is android based messaging application, which provides secure messaging between
+                two connected devices. This application provides some extra security facilities by applying AES encryption
+                and decryption algorithm (Technique).
+            </p> 
+            <p style="text-align: justify;">
+                This application converts the given text into encrypted code (Cipher Text) on the
+                sender’s device and send it to another connected device. On the receiver’s device, this application applies decryption algorithm on the
+                received Cipher text, which is related to that encrypted code, and using decryption algorithm
+                your received cipher text will be converted to readable plain text. As AES is a symmetric key
+                algorithm, the key will be appended to the end of the message at the time of transmission. At
+                the receiver side first, it is extracted from the encrypted message and then decryption can be
+                performed.
+            </p>
+          </div>
+          <br />
+          <div class="col-12 col-md-3 offset-md-1 meta">
+            <div class="tags">
+              <h3>Tags</h3>
+              <div class="tech-used-div">
+                <div class="tech-p badge">Android</div>
+                <div class="tech-p badge">MySQL</div>
+                <div class="tech-p badge">Java</div>
+                <div class="tech-p badge">PHP</div>
+              </div>
+              <br />
+              <h3 class="duration">Date</h3>
+              <span class="text-muted">01/07/2019 - 12/04/2020</span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="more-projects">
+                    <h3 class="text-center">More Projects</h3>
+                    <div class="row gallery">
+                        <div class="col-md-4 col-lg-3">
+                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="assets/img/nature/image2.jpg"></a></div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="assets/img/nature/image3.jpg"></a></div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="assets/img/tech/image4.jpg"></a></div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="assets/img/nature/image5.jpg"></a></div>
+                        </div>
+                    </div>
+                </div> -->
+      </section>
+    </main>
+
+    <script>
+      const cursor = document.querySelector(".cursor");
+      if (window.innerWidth <= 1024) {
+        document.getElementsByTagName("BODY")[0].style.cursor = "default";
+        cursor.setAttribute("style", "display:none");
+      } else {
+        document.addEventListener("mousemove", (e) => {
+          cursor.setAttribute(
+            "style",
+            "display:block; top:" + e.pageY + "px; left:" + e.pageX + "px"
+          );
+        });
+      }
+    </script>
+  </body>
+</html>

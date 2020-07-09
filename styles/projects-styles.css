@@ -29,7 +29,7 @@
 }
 
 .project-div{
-    padding: 0 20px;
+    padding: 0 15px;
     border: 1px solid grey;
     border-radius: 15px;
     margin: 20px auto;
@@ -39,15 +39,26 @@
     background-color: transparent;
 }
 
-.project-div .card-img-top{
-    transition: 0.5s;
-    padding: 10px;
+.project-img-div{
+    overflow: hidden;
 }
 
-.project-div:hover .card-img-top{
+.project-div .card-img-top{
     transition: 0.5s;
-    transform: scale(1.05);
+}
+
+.card-img-top:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.ongoing-project-div{
+    position: absolute;
     box-shadow: 0 -2px 20px rgba(0, 0, 0, 1);
+    top: -10px;
+    right: 10px;
+    background-color: deepskyblue;
+    padding: 5px 7px;
 }
 
 .tech-used-div{
@@ -81,5 +92,9 @@
 @media screen and (max-width: 991px){
     .project-div{
         border-bottom: 1px solid white;
+    }
+
+    .ongoing-project-div{
+        font-size: 80%;
     }
 }
