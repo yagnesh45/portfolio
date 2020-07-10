@@ -63,9 +63,9 @@
 
 .contact-submit-btn{
     padding: 10px 30px;
-    /* background-color: #b02d21; */
-    background-color: #151965;
+    background-color: #161087;
     border: 0;
+    width: 100%;
     margin-top: 20px;
     transition-duration: 0.3s;
     font-weight: 700;
