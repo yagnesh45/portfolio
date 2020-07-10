@@ -181,6 +181,7 @@
           class="gform form-elements"
           data-email="yagneshpatil43@gmail.com"
           method="POST"
+          name="contact-form"
           id="contact-form"
         >
           <div
@@ -208,28 +209,28 @@
             type="text"
             name="name"
             class="contact-form-input"
-            placeholder="name"
+            placeholder="name" required
           /><br /><br />
           <label class="contact-form-label">Phone Number</label><br />
           <input
             type="number"
             name="MobileNumber"
             class="contact-form-input"
-            placeholder="phone number"
+            placeholder="phone number" required
           /><br /><br />
           <label class="contact-form-label">Email</label><br />
           <input
             type="email"
             name="email"
             class="contact-form-input"
-            placeholder="email"
+            placeholder="email" required
           /><br /><br />
           <label class="contact-form-label">Subject</label><br />
           <input
             type="text"
             name="subject"
             class="contact-form-input"
-            placeholder="subject"
+            placeholder="subject" required
           /><br /><br />
           <label class="contact-form-label">Message</label><br />
           <textarea
@@ -237,10 +238,10 @@
             rows="4"
             name="message"
             class="contact-form-input"
-            placeholder="Message"
+            placeholder="Message" required
           ></textarea
           ><br /><br />
-          <input type="submit" class="contact-submit-btn" value="SUBMIT" />
+          <button type="submit" class="contact-submit-btn">SUBMIT</button>
         </form>
       </div>
       <br />

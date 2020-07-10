@@ -28,6 +28,11 @@ html, body{
   font-family: 'Montserrat', calibri;
   background-color: #121212;
 }
+.menu-bar-div{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
 
 .menu-button {
     display: inline-block;
@@ -62,7 +67,7 @@ html, body{
     width: 0;
     position: fixed;
     top: 0;
-    background-color: #111;
+    background-color: black;
     overflow-x: hidden;
     padding-top: 80px;
     transition: 0.5s;
