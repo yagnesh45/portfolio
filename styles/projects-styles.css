@@ -90,6 +90,12 @@
     text-decoration: none;
 }
 
+.other-project-li{
+    background-color: #1c1c1c;
+    margin: 10px;
+    padding: 10px 0;
+}
+
 @media screen and (max-width: 991px){
     .project-div{
         border-bottom: 1px solid white;
