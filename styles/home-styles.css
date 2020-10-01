@@ -71,27 +71,30 @@ html, body{
 }
 
 .more-about-me-div{
-  display: inline-block;
   text-decoration: none;
 }
 
-.arrow-icon{
-  vertical-align: middle;
-}
-
 .about-btn-text{
-  width: 30%;
   font-size: 20px;
-  padding-right: 20px;
-  clear: left;
   color: white;
   transition: 0.3s;
-  vertical-align: middle;
 }
 
-.about-btn-text:hover{
-  letter-spacing: 0.7;
-  text-decoration: underline;
+.arrow-icon{
+  margin-left: 0;
+  margin-right: 10px;
+  transition-duration: 0.3s;
+}
+
+.more-about-me-div{
+  padding: 10px 10px 10px 0;
+  width: fit-content;
+  transition-duration: 0.3s;
+}
+
+.more-about-me-div:hover .arrow-icon{
+  margin-right: 0px;
+  margin-left: 10px;
   transition: 0.3s;
 }
 
@@ -102,6 +105,13 @@ html, body{
   position: absolute;
   justify-content: center;
   animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.copyright-div{
+  z-index: 5;
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
 }
 
 @media screen and (max-height: 479px) {  /*479px*/

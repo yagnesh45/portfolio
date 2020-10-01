@@ -129,7 +129,6 @@ html, body{
 }
 
 .progress-inner{
-    background-color: #d9801a;
     background: linear-gradient(to right, #d9801a 50%, #bbb 50%);
     background-size: 200% 100%;
     background-position: right bottom;
@@ -146,15 +145,12 @@ html, body{
 }
 
 .images-row {
-    display: -ms-flexbox; /* IE10 */
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     padding: 0 4px;
   }
   
   .images-column {
-    -ms-flex: 25%; /* IE10 */
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
