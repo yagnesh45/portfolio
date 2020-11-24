@@ -138,12 +138,12 @@ html, body{
   
     .menu-button {
       top: 5px;
-      right: 25px;
+      right: 15px;
     }
   
     .home-div{
-      top: 5px;
-      left: 20px;
+      top: 10px;
+      left: 10px;
     }
   
     .sidenav a {
@@ -154,9 +154,5 @@ html, body{
         background-color: black;
         height: 52px;
         z-index: 3;
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
     }
 }

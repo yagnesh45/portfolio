@@ -137,16 +137,6 @@ html, body{
     z-index: 4;
   }
 
-  .home-div{
-    top: 5px;
-    left: 25px;
-  }
-
-  .menu-button {
-    top: 5px;
-    right: 25px;
-  }
-
   .sidenav a {
     font-size: 18px;
   }
@@ -194,16 +184,6 @@ html, body{
   .sidenav {
     padding-top: 60px;
     z-index: 4;
-  }
-
-  .menu-button {
-    top: 5px;
-    right: 25px;
-  }
-
-  .home-div{
-    top: 5px;
-    left: 20px;
   }
 
   .sidenav a {
