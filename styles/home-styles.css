@@ -106,11 +106,30 @@ html, body{
 }
 
 .copyright-div{
-  z-index: 5;
   position: absolute;
   left: 10px;
   bottom: 5px;
 }
+
+.more-about-div{
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  padding: 20px 0;
+}
+
+.more-about-link{
+  padding: 20px 36px;
+}
+
+.more-about-div:hover .arrow-icon{
+  margin-right: 0px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
 
 @media screen and (max-height: 479px) {  /*479px*/
   .sidenav {
@@ -136,7 +155,8 @@ html, body{
     background-image: url('../images/me_2.jpg');
     width: 100%;
     height: 100%;
-    opacity: 0.4;
+    opacity: 0.8;
+    filter: blur(2px);
   }
 
   .name-container{
@@ -198,6 +218,7 @@ html, body{
     background-image: url('../images/me_2.jpg');
     width: 100%;
     height: 100%;
+    filter: blur(2px);
     opacity: 0.4;
   }
 
@@ -218,17 +239,11 @@ html, body{
   }
 
   .about-me-brief{
-    width: 60%;
     font-size: 70%;
   }
 
   .menu-bar-div{
-    background-color: black;
-    height: 52px;
-    z-index: 3;
-    position: absolute;
-    width: 100%;
-    top: 0;
+    height: 0;
     left: 0;
   }
 }
