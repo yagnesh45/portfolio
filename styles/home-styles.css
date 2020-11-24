@@ -59,15 +59,13 @@ html, body{
 }
 
 .my-name{
-  font-size: 500%;
+  font-size: 5rem;
   font-weight: 600;
-  margin-bottom: 45px;
 }
 
 .about-me-brief{
   display: block;
-  width: 40%;
-  text-align: justify;
+  width: 100%;
 }
 
 .more-about-me-div{
@@ -215,7 +213,7 @@ html, body{
   }
 
   .my-name{
-    font-size: 320%;
+    font-size: 3.2rem;
     width: 80%;
   }
 
