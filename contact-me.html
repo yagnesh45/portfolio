@@ -47,9 +47,9 @@
       <div id="mySidenav" class="sidenav">
         <a
           href="javascript:void(0)"
-          class="menu-anchor closebtn"
+          class="closebtn"
           onclick="closeNav()"
-          >&times;</a
+          ><img src="https://img.icons8.com/fluent-systems-regular/24/ffffff/multiply.png"/></a
         >
         <p><a href="about.html" class="menu-anchor">About</a></p>
         <p>
@@ -58,7 +58,7 @@
           >
         </p>
         <p><a href="projects.html" class="menu-anchor">Projects</a></p>
-        <p><a href="#" class="menu-anchor">Contact Me</a></p>
+        <p><a href="#" class="menu-anchor active">Contact Me</a></p>
         <div class="follow-me-div">
           <h4>Follow me</h4>
           <div class="social-media-div">
@@ -109,9 +109,9 @@
 
     <div class="contact-me-content-div container">
       <div class="row">
-      <div class="contact-me-title-div col-lg-6 col-md-6 col-sm-12">
-        <h1 class="contact-me-title" style="font-size: 200%">Contact-Me</h1>
-        <br />
+      <div class="contact-me-title-div col-md-6 col-sm-12 mt-3">
+        <h1 class="contact-me-title" style="font-size: 200%">Contact Me</h1>
+        <!-- <br /> -->
         <p style="font-size: 70%">
           want to be in contact with me? <br />
           You can follow me on :
@@ -165,8 +165,12 @@
           or just fill this form to get in touch with me 😃
         </p>
         <div class="arrow-right"></div>
+        <div class="contact-img-div">
+          <img src="images/contact-img.svg" class="img-fluid p-5" alt="">
+        </div>
       </div>
-      <div class="contact-form-div col-lg-6 col-md-6 col-sm-12">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="contact-form-div">
         <form
           action="https://script.google.com/macros/s/AKfycbwDwZaeMQh1PJ3xe0AjV9IV46GW4zOui5134KV4CJiQt3V8LT6R/exec"
           class="gform form-elements"
@@ -196,39 +200,34 @@
             </p>
           </div>
            <h2>Get In Touch.</h2>
-            <!-- <label class="contact-form-label">Name</label><br /> -->
           <input
             type="text"
             name="name"
             class="contact-form-input"
             placeholder="Name"
             required
-          /><br /><br />
-          <!-- <label class="contact-form-label">Phone Number</label><br /> -->
+          /><br />
           <input
             type="number"
             name="MobileNumber"
             class="contact-form-input"
             placeholder="Phone Number"
             required
-          /><br /><br />
-          <!-- <label class="contact-form-label">Email</label><br /> -->
+          /><br />
           <input
             type="email"
             name="email"
             class="contact-form-input"
             placeholder="Email"
             required
-          /><br /><br />
-          <!-- <label class="contact-form-label">Subject</label><br /> -->
+          /><br />
           <input
             type="text"
             name="subject"
             class="contact-form-input"
             placeholder="Subject"
             required
-          /><br /><br />
-          <!-- <label class="contact-form-label">Message</label><br /> -->
+          /><br />
           <textarea
             type="text"
             rows="4"
@@ -242,6 +241,7 @@
           <button type="submit" class="contact-submit-btn">SUBMIT</button>
         </form>
       </div>
+    </div>
     </div>
       <br />
     </div>
