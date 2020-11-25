@@ -112,7 +112,6 @@ html, body{
 }
 
 .more-about-div{
-  z-index: 3;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -121,7 +120,7 @@ html, body{
 }
 
 .more-about-link{
-  padding: 20px 36px;
+  padding: 20px;
 }
 
 .more-about-div:hover .arrow-icon{
@@ -130,6 +129,9 @@ html, body{
   transition: 0.3s;
 }
 
+.img-link{
+  padding: 5px;
+}
 
 @media screen and (max-height: 479px) {  /*479px*/
   .sidenav {

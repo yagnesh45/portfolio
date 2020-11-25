@@ -125,6 +125,7 @@ html, body{
     right: 45px;
     bottom: 20px;
     position: absolute;
+    transition-delay: 0.3s;
 }
   
 .social-media-div{
@@ -133,7 +134,8 @@ html, body{
   
 .img-link{
     float: left;
-    padding: 5px;
+    padding: 10px 5px;
+    cursor: none;
     transition-duration: 0.3s;
 }
 
