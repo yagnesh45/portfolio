@@ -87,3 +87,7 @@
   .img-link{
       padding: 5px;
   }
+
+footer .img-link{
+    padding: 10px 5px;
+}
