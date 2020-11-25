@@ -58,59 +58,44 @@
       <div id="mySidenav" class="sidenav">
         <a
           href="javascript:void(0)"
-          class="menu-anchor closebtn"
+          class="closebtn"
           onclick="closeNav()"
-          >&times;</a
+          ><img src="https://img.icons8.com/fluent-systems-regular/24/ffffff/multiply.png"/></a
         >
-        <a href="../about.html" class="menu-anchor">About</a>
-        <a href="../experience-education.html" class="menu-anchor"
-          >Education & Experience</a
-        >
-        <a href="../projects.html" class="menu-anchor">Projects</a>
-        <a href="../contact-me.html" class="menu-anchor">Contact Me</a>
+
+        <p><a href="../index.html" class="menu-anchor">Home</a></p>
+        <p><a href="../about.html" class="menu-anchor">About</a></p>
+        <p>
+          <a href="../experience-education.html" class="menu-anchor"
+            >Education & Experience</a
+          >
+        </p>
+        <p><a href="../projects.html" class="menu-anchor active">Projects</a></p>
+        <p><a href="../contact-me.html" class="menu-anchor">Contact Me</a></p>
         <div class="follow-me-div">
-          <h4>Follow me</h4>
+          <h5 class="text-center">Follow me</h5>
+          <hr style="background-color: #afafaf; margin-bottom: 3px;">
           <div class="social-media-div">
             <a
-              class="img-link"
-              href="https://www.instagram.com/yagnesh_patil/"
-              target="_blank_"
-              ><img
-                src="../images/instagram.png"
-                height="30px"
-                width="30px"
-                alt="ig"
-            /></a>
-            <a
-              class="img-link"
+              class="img-link text-center"
               href="https://www.linkedin.com/in/yagnesh45"
               target="_blank_"
-              ><img
-                src="../images/linkedin.png"
-                height="30px"
-                width="30px"
-                alt="in"
-            /></a>
-            <a
-              class="img-link"
-              href="https://www.facebook.com/yagnesh.patil.2311"
-              target="_blank_"
-              ><img
-                src="../images/facebook.png"
-                height="30px"
-                width="30px"
-                alt="fb"
-            /></a>
+              ><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin-2.png"/></a>
             <a
               class="img-link"
               href="https://www.github.com/yagnesh45"
               target="_blank_"
-              ><img
-                src="../images/github.png"
-                height="30px"
-                width="30px"
-                alt="git"
-            /></a>
+              ><img src="https://img.icons8.com/fluent-systems-filled/30/ffffff/github.png"/></a>
+              <a
+              class="img-link"
+              href="https://www.medium.com/yagneshpatil43"
+              target="_blank_"
+              ><img src="https://img.icons8.com/color/30/000000/medium-logo.png"/></a>
+              <a
+              class="img-link"
+              href="https://www.instagram.com/yagnesh_patil/"
+              target="_blank_"
+              ><img src="https://img.icons8.com/material-outlined/30/ffffff/instagram-new.png"/></a>
           </div>
         </div>
       </div>
@@ -180,9 +165,40 @@
                 </div> -->
       </section>
     </main>
-    <footer style="border-top: 1px solid #3f3f3f; margin-top:20px; padding: 10px 0;">
-      <p class="text-center" style="margin-bottom: 0;"> &copy; Yagnesh Patil </p>
-    </footer>
+    <div class="container-fluid">
+      <footer class="sticky-footer shodow" style="border-top: 1px solid #3f3f3f; margin-top:20px; padding: 10px 0;">
+        <br>
+        <div class="row">
+          <div class="col-md-6 name-div mb-4">
+            <h4 class="text-center text-sm-left font-weight-bold" style="margin-bottom: 0;"> <span class="text-muted">&copy; 2020</span> Yagnesh Patil </h4>
+          </div>
+          <div class="col-md-6 mb-4">
+              <div class="footer-social-div text-sm-right text-center">
+                <a
+                  class="img-link text-center"
+                  href="https://www.linkedin.com/in/yagnesh45"
+                  target="_blank_"
+                  ><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin-2.png"/></a>
+                <a
+                  class="img-link"
+                  href="https://www.github.com/yagnesh45"
+                  target="_blank_"
+                  ><img src="https://img.icons8.com/fluent-systems-filled/30/ffffff/github.png"/></a>
+                  <a
+                  class="img-link"
+                  href="https://www.medium.com/yagneshpatil43"
+                  target="_blank_"
+                  ><img src="https://img.icons8.com/color/30/000000/medium-logo.png"/></a>
+                  <a
+                  class="img-link"
+                  href="https://www.instagram.com/yagnesh_patil/"
+                  target="_blank_"
+                  ><img src="https://img.icons8.com/material-outlined/30/ffffff/instagram-new.png"/></a>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
     <script>
       const cursor = document.querySelector(".cursor");
       if (window.innerWidth <= 1024) {
