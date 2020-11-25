@@ -154,6 +154,17 @@
   margin-bottom: 0px;
 }
 
+.experience-content-div{
+  padding: 20px;
+  margin: 50px 0 0 0;
+  border-radius: 20px;
+  animation: 1s ease 0s 1 slideInFromBottom;
+}
+
+.extra-curricular-div{
+  margin: 30px 0;
+}
+
 /* Media queries - Responsive timeline on screens less than 768px wide */
 @media screen and (max-width: 1180px) {
   .institute{
@@ -195,11 +206,12 @@
   .right {
     left: 0%;
   }
-}
 
-.experience-content-div{
-    padding: 20px;
-    margin: 50px 20px 20px;
-    border-radius: 20px;
-    animation: 1s ease 0s 1 slideInFromBottom;
+  .experience-title-div{
+    padding-top: 0px;
+  }
+
+  .experience-content-div, .education-content-div{
+    margin-top: 20px;
+  }
 }
