@@ -15,9 +15,20 @@
     <script type="text/javascript">
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("follow-me-div").style.display = "block";
+        menuAnchors = document.getElementsByClassName("menu-anchor");
+        for (let index = 0; index < menuAnchors.length; index++) {
+          menuAnchors[index].style.display = "block";          
+        }
       }
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
+        document.getElementsByClassName("follow-me-div")[0].style.display = "none";
+
+        menuAnchors = document.getElementsByClassName("menu-anchor");
+        for (let index = 0; index < menuAnchors.length; index++) {
+          menuAnchors[index].style.display = "none";          
+        }
       }
     </script>
     <link rel="stylesheet" type="text/css" href="styles/header-styles.css" />
@@ -54,12 +65,12 @@
         </p>
         <p><a href="projects.html" class="menu-anchor">Projects</a></p>
         <p><a href="contact-me.html" class="menu-anchor">Contact Me</a></p>
-        <div class="follow-me-div">
+        <div class="follow-me-div" id="follow-me-div">
           <h5 class="text-center">Follow me</h5>
           <hr style="background-color: #afafaf; margin-bottom: 3px;">
           <div class="social-media-div">
             <a
-              class="img-link text-center"
+              class="img-link"
               href="https://www.linkedin.com/in/yagnesh45"
               target="_blank_"
               ><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin-2.png"/></a>
@@ -94,6 +105,28 @@
         <p>
           📱Android App Developer <br> 👨‍💻 Web Developer <br> 🤖 ML Enthusiast
         </p>
+      </div>
+      <div class="social-div text-sm-right text-center">
+        <a
+          class="img-link linkedin"
+          href="https://www.linkedin.com/in/yagnesh45"
+          target="_blank_"
+          ><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin-2.png"/></a>
+        <a
+          class="img-link github"
+          href="https://www.github.com/yagnesh45"
+          target="_blank_"
+          ><img src="https://img.icons8.com/fluent-systems-filled/30/ffffff/github.png"/></a>
+          <a
+          class="img-link medium"
+          href="https://www.medium.com/yagneshpatil43"
+          target="_blank_"
+          ><img src="https://img.icons8.com/color/30/000000/medium-logo.png"/></a>
+          <a
+          class="img-link instagram"
+          href="https://www.instagram.com/yagnesh_patil/"
+          target="_blank_"
+          ><img src="https://img.icons8.com/material-outlined/30/ffffff/instagram-new.png"/></a>
       </div>
       <div class="more-about-me-div d-block d-sm-none">
         <a style="text-decoration: none;" href="about.html" class="anchor-about"
