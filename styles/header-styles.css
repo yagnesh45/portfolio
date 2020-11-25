@@ -131,12 +131,21 @@ html, body{
   
 .img-link{
     float: left;
-    padding: 0 0 10px 10px;
+    padding: 5px;
 }
   
 .img-link:hover{
     background-color: transparent;
     display: inline-block;
+}
+
+footer .sticky-footer{
+    flex-shrink: 0;
+    border-top: 1px solid #3f3f3f; margin-top:20px; padding: 10px 0;
+}
+
+.footer-social-div .img-link{
+    float: none;
 }
 
 @media screen and (max-width: 991px) {
