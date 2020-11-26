@@ -185,7 +185,7 @@ footer .sticky-footer{
     right: 50px;
     bottom: 75px;
     display: none;
-    border: 1px solid #818181;
+    border: 1px solid #d8d6d6;
 }
 
 @media screen and (max-width: 991px) {
