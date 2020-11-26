@@ -121,10 +121,10 @@ html, body{
 }
 
 .progress-outer{
-    border-radius: 5px;
+    border-radius: 25px;
     height: 25px;
     background-color: #bbb;
-    width: 80%;
+    width: 90%;
     margin-bottom: 20px;
 }
 
@@ -137,7 +137,7 @@ html, body{
     margin: 2px 0;
     vertical-align: center;
     border: 2px solid #bbb;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 .progress-inner.is-visible{

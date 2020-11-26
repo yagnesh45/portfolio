@@ -176,6 +176,18 @@ footer .sticky-footer{
     float: none;
 }
 
+#scrollToTop{
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 2;
+    right: 50px;
+    bottom: 75px;
+    display: none;
+    border: 1px solid #818181;
+}
+
 @media screen and (max-width: 991px) {
     .sidenav {
       padding-top: 60px;
@@ -200,5 +212,12 @@ footer .sticky-footer{
         background-color: black;
         height: 52px;
         z-index: 3;
+    }
+}
+
+@media screen and (max-width: 460px){
+    #scrollToTop{
+        right: 15px;
+        bottom: 30px;
     }
 }
