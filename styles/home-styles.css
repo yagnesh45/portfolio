@@ -1,32 +1,33 @@
-@keyframes slideInFromTop{
-  0%{
+@keyframes slideInFromTop {
+  0% {
     transform: translateY(10%);
     opacity: 0;
   }
-  100%{
+  100% {
     transform: translateY(0%);
   }
 }
 
-@keyframes slideInFromBottom{
-  0%{
+@keyframes slideInFromBottom {
+  0% {
     transform: translateY(-10%);
     opacity: 0;
   }
-  100%{
+  100% {
     transform: translateY(0%);
   }
 }
 
-html, body{
+html,
+body {
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #121212;
   cursor: none;
   overflow: hidden;
 }
 
-.div-left{
+.div-left {
   background-color: #121212;
   width: 50%;
   height: 100%;
@@ -37,10 +38,10 @@ html, body{
   bottom: 0;
 }
 
-.div-right{
-  background-image: url('../images/me_1.jpg');
+.div-right {
+  background-image: url("../images/homepage_me.jpeg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
   width: 50%;
@@ -54,49 +55,49 @@ html, body{
   animation: 1s ease-out 0s 1 slideInFromBottom;
 }
 
-.work-name{
+.work-name {
   font-size: 30px;
 }
 
-.my-name{
+.my-name {
   font-size: 5rem;
   font-weight: 600;
 }
 
-.about-me-brief{
+.about-me-brief {
   display: block;
   width: 100%;
 }
 
-.more-about-me-div{
+.more-about-me-div {
   text-decoration: none;
 }
 
-.about-btn-text{
+.about-btn-text {
   font-size: 20px;
   color: white;
   transition: 0.3s;
 }
 
-.arrow-icon{
+.arrow-icon {
   margin-left: 0;
   margin-right: 10px;
   transition-duration: 0.3s;
 }
 
-.more-about-me-div{
+.more-about-me-div {
   padding: 10px 10px 10px 0;
   width: fit-content;
   transition-duration: 0.3s;
 }
 
-.more-about-me-div:hover .arrow-icon{
+.more-about-me-div:hover .arrow-icon {
   margin-right: 0px;
   margin-left: 10px;
   transition: 0.3s;
 }
 
-.name-container{
+.name-container {
   top: 25%;
   left: 13%;
   z-index: 2;
@@ -105,13 +106,13 @@ html, body{
   animation: 1s ease-out 0s 1 slideInFromTop;
 }
 
-.copyright-div{
+.copyright-div {
   position: absolute;
   left: 10px;
   bottom: 5px;
 }
 
-.more-about-div{
+.more-about-div {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -119,21 +120,22 @@ html, body{
   padding: 20px 0;
 }
 
-.more-about-link{
+.more-about-link {
   padding: 20px;
 }
 
-.more-about-div:hover .arrow-icon{
+.more-about-div:hover .arrow-icon {
   margin-right: 0px;
   margin-left: 10px;
   transition: 0.3s;
 }
 
-.img-link{
+.img-link {
   padding: 5px;
 }
 
-@media screen and (max-height: 479px) {  /*479px*/
+@media screen and (max-height: 479px) {
+  /*479px*/
   .sidenav {
     padding-top: 50px;
     z-index: 4;
@@ -143,36 +145,36 @@ html, body{
     font-size: 18px;
   }
 
-  .div-right{
-    background-image: url('../images/me_2.jpg');
+  .div-right {
+    background-image: url("../images/homepage_me.jpeg");
     width: 100%;
     height: 100%;
     opacity: 0.8;
     filter: blur(2px);
   }
 
-  .name-container{
+  .name-container {
     top: 30%;
     margin: 0 0 25 30px;
     left: 0%;
   }
 
-  .work-name{
+  .work-name {
     font-size: 150%;
   }
 
-  .my-name{
+  .my-name {
     font-size: 320%;
     width: 80%;
     margin: 0 0 16px;
   }
 
-  .about-me-brief{
+  .about-me-brief {
     width: 85%;
     font-size: 70%;
   }
 
-  .menu-bar-div{
+  .menu-bar-div {
     background-color: black;
     height: 72px;
     z-index: 3;
@@ -192,39 +194,45 @@ html, body{
     font-size: 18px;
   }
 
-  .div-left{
+  .div-left {
     background-color: unset;
   }
 
-  .div-right{
-    background-image: url('../images/me_2.jpg');
+  .div-right {
+    background-image: radial-gradient(
+        circle farthest-side at 80% 50%,
+        transparent,
+        #000 100%
+      ),
+      url("../images/homepage_me.jpeg");
     width: 100%;
     height: 100%;
-    filter: blur(2px);
+    /* filter: blur(0.05em); */
     opacity: 0.4;
+    background-position: 45%;
   }
 
-  .name-container{
+  .name-container {
     top: 25%;
     margin: 0 0 15px 30px;
     left: 0%;
     width: 70%;
   }
 
-  .work-name{
+  .work-name {
     font-size: 150%;
   }
 
-  .my-name{
+  .my-name {
     font-size: 3.2rem;
     width: 80%;
   }
 
-  .about-me-brief{
+  .about-me-brief {
     font-size: 70%;
   }
 
-  .menu-bar-div{
+  .menu-bar-div {
     height: 0;
     left: 0;
   }
